@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/et_inputEmail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите почту"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="18dp"/>
+
+
+        <EditText
+            android:id="@+id/et_inputTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_inputEmail"
+            android:hint="Введите тему"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="18dp"/>
+        <EditText
+            android:id="@+id/et_inputMess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_inputTheme"
+            android:hint="Введите сообщение"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="18dp"/>
+
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="SEND"
+            app:layout_constraintTop_toBottomOf="@+id/et_inputMess"
+            android:layout_marginHorizontal="16dp"/>
+
+
+
+</LinearLayout>
